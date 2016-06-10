@@ -9,14 +9,14 @@ import string
 class Environment(object):
     def c_to_f(self, temp):
         '''
-      This function takes a temperature in Celsius and returns the temp in Farenheit
+      This function takes a temperature in Celsius and returns the temp in Fahrenheit
       '''
-        farenheit = (temp * (9.0 / 5.0) + 32)
-        return farenheit
+        fahrenheit = (temp * (9.0 / 5.0) + 32)
+        return fahrenheit
 
     def f_to_c(self, temp):
         '''
-      This function takes a temperature in Farenheit and returns the temp in Celsius
+      This function takes a temperature in Fahrenheit and returns the temp in Celsius
       '''
         celsius = ((temp - 32) * (5 / 9.0))
         return celsius
