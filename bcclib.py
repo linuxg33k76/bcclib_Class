@@ -68,17 +68,18 @@ class BCC_Math(object):
     def ran_check(self, num, low, high):
         return num in range(low, high)
 
-    def fibonacci(self,start_a,start_b):
+    def fibonacci(self,start_a,start_b,r):
         '''
         This generator method creates a Fibonacci number sequence based on start values passed to it.
         :param start_a: start value - 1 in classic; 0 in modern
         :param start_b: start value - usually 1
+        :param r: range of values
         :return: yield value
         '''
-        a,b = start_a,start_b
-        while True:
+        a,b = start_a,start_b  #tuple unpacking
+        for i in range(r):     #Only create r number of results
             yield a
-            a,b = b, a+b
+            a,b = b, a+b       #tuple packing
 
 
 class Misc_Functions(object):
