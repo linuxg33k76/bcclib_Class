@@ -7,6 +7,10 @@ import string
 
 
 class Environment(object):
+
+    def __init__(self):
+        pass
+
     def c_to_f(self, temp):
         '''
       This function takes a temperature in Celsius and returns the temp in Fahrenheit
@@ -24,6 +28,9 @@ class Environment(object):
 
 class BCC_Math(object):
     # Function to multiply all numbers in a list
+
+    def __init__(self):
+        pass
 
     def multiply(self, numbers):
         '''
@@ -63,6 +70,10 @@ class BCC_Math(object):
 
 
 class Misc_Functions(object):
+
+    def __init__(self):
+        pass
+
     def up_low(self, s):
         """
         Take a string input, and counts the number of uppercase and lowercase letters.
