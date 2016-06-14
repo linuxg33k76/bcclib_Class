@@ -4,7 +4,7 @@ Created June 7, 2016
 '''
 import math
 import string
-
+import re
 
 class Environment(object):
 
@@ -134,6 +134,18 @@ class Misc_Functions(object):
         '''
         alphaset = set(alphabet)  # Set creates a unique list of values in a string
         return alphaset <= set(str1.lower())
+
+    #Function for finding multiple regular expressions
+
+    def multi_re_find(patterns,phrase):
+        '''
+        Takes in a list of regex patterns
+        Prints a list of all matches
+        '''
+        for pattern in patterns:
+            print 'Searching the phrase using the re check: %r' %pattern
+            print re.findall(pattern,phrase)
+            print '\n'
 
 class Cylinder(object):
 
